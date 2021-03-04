@@ -1,0 +1,113 @@
+
+    // }
+
+
+    // // CREATING AND STORING THE ELEMENT
+    // const addMovie = (ev) => {
+    //     ev.preventDefault();  //to stop the form submitting
+
+    //     if (M.checked == true) {
+    //         var gend = "Mr.";
+    //     }
+    //     if (M.checked == true) {
+    //         var gend = "Ms.";
+    //     }
+
+
+    //     let feedbacks = {
+
+    //         firname: document.getElementById('fname').value,
+    //         midname: document.getElementById('mname').value,
+    //         lasname: document.getElementById('lname').value,
+
+    //         //  gendermale: document.gend;
+    //         feedmessage: document.getElementById('feed').value
+
+    //     }
+    //     movies.push(feedbacks);
+    //     // document.forms[0].reset(); // to clear the form for the next entries
+    //     document.querySelector('form').reset();
+    //     document.getElementById("sub5").innerHTML = "Says ->";
+
+    //     //for display purposes only
+    //     // console.warn('added' , {feedbacks} );
+    //     //   let pre = document.querySelector('#msg pre');
+    //     // pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
+
+    //     //saving to localStorage
+    //     //localStorage.setItem('MyMovieList', JSON.stringify(movies) );
+    // }
+
+
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     document.getElementById('add').addEventListener('click', addMovie);
+    // });
+    // document.addEventListener('DOMContentLoaded', () => {
+    //     document.getElementById('add2').addEventListener('click', resf);
+    // });
+
+    // // SIMPLE SHOW ALL FUNCTION
+    // function showall() {
+    //     ev.preventDefault();
+    //     var fn = document.getElementById("fname").value;
+    //     var ln = document.getElementById("lname").value;
+
+    //     if (fname.value != "" && (M.checked == false || F.checked == false) && lname.value != "") {
+
+    //         if (M.checked == true) {
+    //             document.getElementById("sub0").innerHTML = "Mr.";
+
+    //         }
+    //         else {
+    //             document.getElementById("sub0").innerHTML = "Ms.";
+
+
+
+    //         }
+
+
+    //         namef();
+    //         namem();
+    //         namel();
+    //         feedback();
+    //         document.getElementById("sub5").innerHTML = "Says ->";
+    //         document.getElementById("sub6").innerHTML = "__________________________";
+
+    //         // alert("Feedback Added Successfully!!! ");
+
+    //         // var text = ">>>>>";
+    //         // console.log(text);
+    //         // greeting = "nothing";
+    //     }
+    //     else {
+
+    //         alert("1. Enter the first Name \n2. Enter the last name \n3. Select Gender!!! ");
+
+
+    //     }
+
+
+    // }
+    // function namef() {
+    //     var fn = document.getElementById("fname").value;
+
+    //     document.getElementById("sub1").innerHTML = fn;
+    // }
+    // function namem() {
+    //     var mn = document.getElementById("mname").value;
+    //     document.getElementById("sub2").innerHTML = mn;
+
+    // }
+    // function namel() {
+    //     var ln = document.getElementById("lname").value;
+
+    //     document.getElementById("sub3").innerHTML = ln;
+
+    // }
+
+
+    // function feedback() {
+    //     var fd = document.getElementById("feed").value;
+    //     document.getElementById("sub4").innerHTML = fd;
+
+    // }
