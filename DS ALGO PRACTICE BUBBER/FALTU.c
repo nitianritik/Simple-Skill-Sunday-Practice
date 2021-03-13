@@ -1,79 +1,25 @@
-// program to implement structure within a structure and menu driven program
-
-#include <stdio.h>
-#include <conio.h>
-#include <time.h>
-#include <stdlib.h>
-
-struct fullname
-{
-    char firstname[20];
-    char midname[20];
-    char lastname[20];
-};
-
-typedef struct fullname fullname;
-
-struct student
+int *matchingStrings(int strings_count, char **strings, int queries_count, char **queries, int *result_count)
 {
 
-    int roll;
-    fullname name;
-    int gender;
-
-};
-
-
-
-void insert(student);
-
-void main()
-{
-
-    // printf("Enter no. of student = ");
-    //  unsigned short int n; // 2 bytes of unsigned short integer range is 66,535
-    // scanf("%d",&n);
-
-    char c;
-    while (1)
+    static int a[queries_count];
+    int count = 0 for (int j = 0; j < queries_count; j++)
     {
-        printf("\n\nEnter Your Choice = ");
-        scanf("%c", & c);
 
-        switch (c)
+        count = 0;
+
+        for (int i = 0; i < strings_count; i++)
         {
-        case 'i':
-        //    insert();
-            break;
 
-        case 's':
-          //  insert();
-            break;
-
-        case 'p':
-          //  insert();
-            break;
-
-        case 'q':
-            exit(0);
-            break;
-
-        default:
-            printf(" Re-Enter the coice NOW !!!");
-            break;
+            if (strcmp(queries[j], strings[i]) == 0)
+            {
+                count++;
+            }
         }
+
+        a[j] = count;
     }
 
-    getch();
-}
+    *result_count = sizeof(a) / sizeof(a[0]);
 
-void insert(student)
-{
-
-  printf("\tInsert student  Roll = ");
-  scanf("%d",&student.roll);
-
-
-
-
+    return a;
 }
