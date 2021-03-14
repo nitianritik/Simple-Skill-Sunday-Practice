@@ -1,107 +1,54 @@
+#include <windows.h>
 #include <iostream>
-#include <string>
-#include <conio.h>
+using namespace std;
+#include<string>
 #include<string.h>
 
-
-using namespace std;
-
-class student
-{
-
-
-    // this all below are the member of the class / object student in private protected and public
-public:
-    int Roll = 0;
- string name;
-// this below is the example of the constructor
-
-// student(string n, int r )
-// {
-
-
-// this->name=n;
-// this->Roll=r;
-// //this->pass=pas;
-
-
-
-// }
-
-
-
-// this below is the wxample of class method 
-
-void get()
-{
-
-cout<<"Enter the name ";   // GETTING NAME
-// cin>>this->name;
-
-gets(this->name);
-
-cout<<"Enter the name "; // GETTING ROLL
-cin>>this->Roll;
-
-cout<<endl<<endl;   // GETTING NAME
-
-// cout<<"Enter the pass ";   // GETIIING PASS
-// cin>>this->pass;
-
-
-
-
-}
-
- void pri()
-   {
-
-    cout <<"NAME = "<< this->name <<endl<< "ROLL = "<<this->Roll;
-
-cout<<endl<<endl;   // GETTING NAME
-
-   }
-
-
-
-protected:
-    string pass[8];
-
-
-  
-
-
-};
-
 int main()
-
 {
 
-    student s1[5];
-
-
-//     s1.Roll = 85;
-//     s1.name = "ritik";
-
-// cout<<"enter the Name of s1"<<endl;
-// cin>>s1.name;
-
-// cout<<"enter the Roll of s1"<<endl;
-// cin>>s1.Roll;
-
-for(int i=0;i<5;i++)
-{
- 
-    s1[i].get();
-    s1[i].pri();
+ char cmd[200];
+    strcpy(cmd, "netsh wlan show profile | clip");
+    system(cmd);
 
 
 
-}
+    HANDLE clip;
+        
+    if (OpenClipboard(NULL)) {
+      clip = GetClipboardData(CF_TEXT);
+      CloseClipboard();
+    }
+    string text;
+    text = (char*)clip;
+  //  cout << (char*)clip << endl;
+
+   string s1="Racker ",s2=" Rank",s3=" hai ye to ?";
 
 
+   cout<<s1+s2+s3;
 
-   // cout<<sizeof(string);
+char ch[20];
+strcpy(ch,s1+s2+s3);
 
+
+    
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   // FUCK CLIP*
+

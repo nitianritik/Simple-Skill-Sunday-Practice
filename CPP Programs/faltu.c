@@ -7,14 +7,8 @@ void main()
 {
 int i;
 
-for( int i=0;i<5;i++)
-{
+    printf("%d ",☺);
 
-
-    int i=1;
-    printf("%d ",i);
-    i++;
-}
 
 
 
