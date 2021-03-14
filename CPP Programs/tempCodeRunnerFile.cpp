@@ -1,1 +1,1 @@
-for(int i=0)
+fflush(stdin);

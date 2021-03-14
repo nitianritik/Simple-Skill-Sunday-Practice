@@ -7,7 +7,7 @@ void main()
 {
 int i;
 
-    printf("%d ",☺);
+    printf("%d ",i);
 
 
 

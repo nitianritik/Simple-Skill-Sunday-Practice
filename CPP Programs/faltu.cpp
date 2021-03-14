@@ -28,8 +28,10 @@ int main()
 
    cout<<s1+s2+s3;
 
-char ch[20];
-strcpy(ch,s1+s2+s3);
+//strcpy(ch,s1+s2+s3);
+
+
+
 
 
     
