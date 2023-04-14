@@ -1,16 +1,16 @@
 
-# # # print("Enter Your Fucking Name dont write pussy, fuck, suck, asshole or dick\n")
+# # # print("Enter Your  Name \n")
 
 # # # name=input()
 
 
-# # # g="Hello \"" + name + "\" i am with  you dont worry lets fuck"
+# # # g="Hello \"" + name + "\" i am with  you dont worry lets"
 
 # # # # print(g[6:6+len(name):2])
 # # # # print(g[6:6+len(name):2])
 # # # # # print(g[6:6+len(name):2])
 # # # # g=g.upper()
-# # # print(g.replace("fuck","****"))
+# # # print(g.replace("f***","****"))
 
 
 # # Letter_content='''
@@ -69,7 +69,7 @@
 
 #   "Ritik" : "He is a coder",
 #   "Ankit" : "He is a professional Gamer",
-#   "Govind": "He is chutiya",
+#   "Govind": "He is ch**iya",
 #   "Raju"  : "He is a scientist"
 
 # }
@@ -82,15 +82,15 @@
 
 # print(dick.items())
 
-# new_dick={
+# new_dict={
 
 #     "i":"coder",
 #     "Raju":"now i am updated"
 # }
 
-# dick.update(new_dick)
+# dict.update(new_dict)
 
-# print(dick.items())
+# print(dict.items())
 
 s = "12:01:00AM"
 
